@@ -1,0 +1,33 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function linha(){
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    function digite(texto){
+        document.write(texto);
+        linha();
+    }
+
+    var anoCopa=1930;
+
+    while(anoCopa<=2022){
+        digite("houve copa em " + anoCopa);
+        anoCopa=anoCopa+4;
+
+    if(anoCopa==1942){
+        digite("a copa do mundo de " + anoCopa + " não ocorreu por causa da ww2");
+        anoCopa=anoCopa+4
+
+
+        if(anoCopa==1946){
+            digite("a copa do mundo de " + anoCopa + " foi cancelada");
+            anoCopa=anoCopa+4
+        }
+    }
+}
+
+</script>

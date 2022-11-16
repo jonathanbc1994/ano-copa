@@ -1,0 +1,40 @@
+<meta charset="UTF-8">
+
+<input/>
+<button>Digite a Tabuada Que Deseja</button>
+<br>
+<br>
+
+<script>
+
+    var input = document.querySelector("input")
+    input.focus ();
+
+    function linha(){
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    function digite(texto){
+        document.write(texto);
+        linha();
+    }
+
+
+    function verifica(){
+    var tabuada = input.value;
+    for(var multiplicador = 1; multiplicador<=12; multiplicador++){
+        var resposta = tabuada * multiplicador;
+        document.write(tabuada + " vezes " + multiplicador + " = "); digite(resposta);
+    }
+
+        input.value = "";
+        input.focus ();
+
+        }
+
+    var button = document.querySelector("button");
+
+    button.onclick = verifica;
+
+</script>
